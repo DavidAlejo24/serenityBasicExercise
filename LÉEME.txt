@@ -1,0 +1,27 @@
+El proyecto serenity-cucumber-start es una adaptación del framework de SerenityBDD,
+considerando las especificiones del ejercicio requerido.
+
+  + main
+	+ java
+		+com
+			+nttdata
+				+task
+				+userInterfaces
+  + test
+    + java                     
+		+stepsDefinitions
+	
+    + resources
+      + features               
+
+Para ejecutar esta prueba E2E es necesario cumplir con los siguentes prerequisitos
+
+- Java V21.0.1
+- JDK v19.0.1
+- IntellIj (Ultima versión recomendado)
+
+Para correr el escenario debemos ejecutar la clase Runner ubicado en:
+main/test/resources/runner.java
+
+El informe se genera en la ruta
+serenity-cucumber-starter\target\site\index.html
