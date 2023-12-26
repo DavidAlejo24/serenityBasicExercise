@@ -36,5 +36,4 @@ public class OpenCarlHomePageUi {
     public static Target BTN_CONTINUE_AGREE = Target.the("Button Continue Agree").located(By.xpath("//div[@id='collapse-payment-method']//input[@value='Continue']"));
     public static Target BTN_CONFIRM_ORDER = Target.the("Button Confirm Order").located(By.xpath("//div[@id='collapse-checkout-confirm']//input[@value='Confirm Order']"));
 
-
 }

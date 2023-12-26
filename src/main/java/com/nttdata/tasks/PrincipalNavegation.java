@@ -4,7 +4,6 @@ import com.nttdata.userInterfaces.OpenCarlHomePageUi;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
-import net.serenitybdd.screenplay.questions.SelectedValue;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 

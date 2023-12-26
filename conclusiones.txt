@@ -1,7 +1,0 @@
---Conclusiones
-Se ejecutó las prueba manual y automtizada de compra de productos en la tienda virtual de forma excelente.
-La selección de productos al carrito, la verificación de información del INVITADO y la confirmación de compra se realizaron exitosamente.
-
---Recomendaciones
-Se recomienda manejar la myatoia de los elementos HTML con sus Ids respectivos,
-para poder hacer una busqueda mas agil y evitar el uso de rastreo de Xpaths.
