@@ -12,7 +12,7 @@ considerando las especificiones del ejercicio requerido.
 				+ userInterfaces
   + test
     + java                     
-		+stepsDefinitions
+		+ stepsDefinitions
 	
     + resources
       + features               
@@ -26,10 +26,11 @@ Para ejecutar esta prueba E2E es necesario cumplir con los siguentes prerequisit
 
 # Ejecución del Proyecto
 Para correr el escenario y generar el informe debemos ejecutar el comando
-- mvn clean verify
- O a su vez par asolo ejecutar el escenario podemos compilar la clase Runner ubicado en:
-- main/test/resources/runner.java
+- gradle clean test
+
+ O a su vez par asolo ejecutar el escenario podemos compilar la clase CucumberTestSuite ubicado en:
+- main/test/java/started/CucumberTestSuite.java
 
 # Reporte Serenity
 
-El informe se genera en la ruta serenity-cucumber-starter\target\site\index.html
+El informe se genera en la ruta serenity-cucumber-starter\target\serenity\index.html
