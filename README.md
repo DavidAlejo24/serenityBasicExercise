@@ -20,9 +20,9 @@ considerando las especificiones del ejercicio requerido.
 # Prerequisitos
 Para ejecutar esta prueba E2E es necesario cumplir con los siguentes prerequisitos
 
-- Java V21.0.1
-- JDK v19.0.1
-- IntellIj (Ultima versión recomendado)
+	- JDK v17
+	- Gradle v7.6
+	- IntellIj (Ultima versión recomendado)
 
 # Ejecución del Proyecto
 Para correr el escenario y generar el informe debemos ejecutar el comando
