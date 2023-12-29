@@ -25,21 +25,39 @@ public class NavegateStepDefinitions {
     }
 
 
-    @When("{actor} busca los productos y los agrega al carrito")
-    public void busca_productos_y_agrega_a_carrito(Actor actor) {
+    @When("{actor} busca los productos y los compra con los datos {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
+    public void busca_productos_y_agrega_a_carrito(Actor actor,String nombre, String apellido, String correo,
+                                                   String telefono, String empresa, String direccion1,
+                                                   String direccion2, String ciudad, String codigoPostal) {
         actor.attemptsTo(
                 PrincipalNavegation.selectProducts(),
-                PrincipalNavegation.goToValidationCar()
+                PrincipalNavegation.goToValidationCar(),
+                PrincipalNavegation.enterInformationToValidatePurchanse(nombre, apellido, correo, telefono, empresa, direccion1,direccion2, ciudad, codigoPostal)
                 //PrincipalNavegation.enterInformationToValidatePurchanse()
 
         );
     }
+    /*
+    @When("{actor} busca los productos y los agrega al carrito")
+    public void busca_productos_y_agrega_a_carrito(Actor actor) {
+        actor.attemptsTo(
+                PrincipalNavegation.selectProducts(),
+                PrincipalNavegation.goToValidationCar(),
+                PrincipalNavegation.enterInformationToValidatePurchanse(nombre, apellido, correo, telefono, empresa, direccion1,direccion2, ciudad, codigoPostal)
+                //PrincipalNavegation.enterInformationToValidatePurchanse()
+
+        );
+    }
+
+     */
 
     @And("{actor} ingresa su información {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} para validar la compra como INVITADO")
     public void ingresa_informacion_para_validar_compra_como_invitado(Actor actor, String nombre, String apellido, String correo,
                                                                       String telefono, String empresa, String direccion1,
                                                                       String direccion2, String ciudad, String codigoPostal) {
         actor.attemptsTo(
+                PrincipalNavegation.selectProducts(),
+                PrincipalNavegation.goToValidationCar(),
                 PrincipalNavegation.enterInformationToValidatePurchanse(nombre, apellido, correo, telefono, empresa, direccion1,direccion2, ciudad, codigoPostal)
 
 

@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+
 public class PrincipalNavegation {
     public static Performable about(String searchTerm) {
         return Task.where("{0} searches for '" + searchTerm + "'",

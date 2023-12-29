@@ -9,6 +9,7 @@ Característica: Comprar productos en Opercart
   @basicTest
   Escenario: Probar movimiento
     Dado el accede al sistema
-    Cuando el busca los productos y los agrega al carrito
-    Y el ingresa su información "david", "Cruz", "test@nttdata.com", "0999999999", "NTT DATA", "Quito", "Quito Sur", "Quito", "+593" para validar la compra como INVITADO
+    Cuando el busca los productos y los compra con los datos "david", "Cruz", "test@nttdata.com", "0999999999", "NTT DATA", "Quito", "Quito Sur", "Quito", "+593"
+    #Cuando el busca los productos y los agrega al carrito
+    #Y el ingresa su información "david", "Cruz", "test@nttdata.com", "0999999999", "NTT DATA", "Quito", "Quito Sur", "Quito", "+593" para validar la compra como INVITADO
     Entonces el valida y confirma la compra

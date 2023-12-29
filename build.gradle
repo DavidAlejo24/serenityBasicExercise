@@ -38,10 +38,11 @@ ext {
 
 dependencies {
     dependencies {
-        testImplementation "net.serenity-bdd:serenity-core:${serenity_version}"
+
+        implementation "net.serenity-bdd:serenity-core:${serenity_version}"
         testImplementation "net.serenity-bdd:serenity-cucumber:${serenity_version}"
-        testImplementation "net.serenity-bdd:serenity-screenplay:${serenity_version}"
-        testImplementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenity_version}"
+        implementation "net.serenity-bdd:serenity-screenplay:${serenity_version}"
+        implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenity_version}"
         testImplementation "net.serenity-bdd:serenity-ensure:${serenity_version}"
         testImplementation "org.junit.platform:junit-platform-launcher:${junit_platform_launcher_version}"
         testImplementation "io.cucumber:cucumber-junit-platform-engine:${cucumber_junit_platform_engine_version}"
@@ -50,6 +51,10 @@ dependencies {
         testImplementation "org.junit.vintage:junit-vintage-engine:${junit_vintage_engine_version}"
         implementation "ch.qos.logback:logback-classic:${logback_classic_version}"
         testImplementation "org.assertj:assertj-core:${assertj_core_version}"
+        testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+        //implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '4.0.3'
+
+
     }
 }
 
