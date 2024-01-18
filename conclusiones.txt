@@ -1,7 +1,9 @@
---Conclusiones
-Se ejecutó las prueba manual y automatizada de compra de productos en la tienda virtual de forma excelente.
-La selección de productos al carrito, la verificación de información del INVITADO y la confirmación de compra se realizaron exitosamente.
+Conclusiones
+    (1) Se ejecutó las prueba manual y automatizada de compra de productos en la tienda virtual de forma excelente.
+    (2) La selección de productos al carrito, la verificación de información del INVITADO y la confirmación de compra se realizaron exitosamente.
+    (3) Se creó 6 escenarios, uno con un escenario, con un esquema del escenario y lectura de JSON en español e ingles respectivamente.
+    (4) Serenity ejecutó los 6 escenarios con 8 test case en un minuto con 31 segundos (1m 31s)
 
---Recomendaciones
-Se recomienda manejar la mayatoria de los elementos HTML con sus Ids respectivos,
-para hacer una busqueda mas ágil y evitar el uso de rastreo de Xpaths.
+Recomendaciones
+    (1) Se recomienda manejar la mayatoria de los elementos HTML con sus Ids respectivos,
+        para hacer una busqueda mas ágil y evitar el uso de rastreo de Xpaths.
