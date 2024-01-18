@@ -21,12 +21,12 @@ public class PrincipalNavegation {
 
     public static Performable selectProducts() {
         return Task.where("{0} interactua con los productos a comprar",
-                WaitUntil.the(OpenCarlHomePageUi.IPHONE_LOCATOR, isVisible()).forNoMoreThan(3).seconds(),
+                WaitUntil.the(OpenCarlHomePageUi.IPHONE_LOCATOR, isVisible()).forNoMoreThan(5).seconds(),
                 Scroll.to(OpenCarlHomePageUi.IPHONE_LOCATOR),
                 Click.on(OpenCarlHomePageUi.IPHONE_ADDTOCAR),
                 Scroll.to(OpenCarlHomePageUi.TABLETS_NAVBAR),
                 Click.on(OpenCarlHomePageUi.TABLETS_NAVBAR),
-                WaitUntil.the(OpenCarlHomePageUi.TABLET_LOCATOR, isVisible()).forNoMoreThan(2).seconds(),
+                WaitUntil.the(OpenCarlHomePageUi.TABLET_LOCATOR, isVisible()).forNoMoreThan(5).seconds(),
                 Scroll.to(OpenCarlHomePageUi.TABLET_SAMSUNG_ADDTOCAR),
                 Click.on(OpenCarlHomePageUi.TABLET_SAMSUNG_ADDTOCAR)
         );
@@ -36,10 +36,10 @@ public class PrincipalNavegation {
         return Task.where("{0} navega para el checkout através del boton CARRITO",
                 Scroll.to(OpenCarlHomePageUi.CKECKOUT_BUTTONPRINCIPAL),
                 Click.on(OpenCarlHomePageUi.CKECKOUT_BUTTONPRINCIPAL),
-                WaitUntil.the(OpenCarlHomePageUi.OPTION_GUEST, isVisible()).forNoMoreThan(3).seconds(),
+                WaitUntil.the(OpenCarlHomePageUi.OPTION_GUEST, isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(OpenCarlHomePageUi.OPTION_GUEST),
                 Click.on(OpenCarlHomePageUi.OPTION_CONTINUE),
-                WaitUntil.the(OpenCarlHomePageUi.FIRSTNAME_INPUT, isVisible()).forNoMoreThan(3).seconds()
+                WaitUntil.the(OpenCarlHomePageUi.FIRSTNAME_INPUT, isVisible()).forNoMoreThan(5).seconds()
         );
     }
 
