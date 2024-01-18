@@ -34,3 +34,5 @@ Para correr el escenario y generar el informe debemos ejecutar el comando
 # Reporte Serenity
 
 El informe se genera en la ruta serenity-cucumber-starter\target\serenity\index.html
+
+![Informe Serenity E2E](./InformeE2E.jpeg)
